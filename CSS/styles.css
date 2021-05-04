@@ -1,0 +1,28 @@
+/* header {
+    font-family: cursive;
+} */
+
+/* #para1 {
+    font-family: cursive;
+    color: greenyellow;
+} */
+
+.odd {
+    /* hexadecimal - #000000(black) - #ffffff(white) */
+    color: #b2aef0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+.even {
+    color: indigo;
+}
+
+h1 {
+    /* Red-Green-Blue (0, 0, 0) - (256, 256, 256) */
+    color: rgb(244, 0, 0);
+}
+
+/* p {
+    color: green;
+} */
