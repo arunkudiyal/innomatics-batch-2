@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- Linking the StyleSheet with HTML -->
     <link rel="stylesheet" href="/CSS/styles.css">
+
     <!-- <style>
 
         h1 {
@@ -16,52 +19,73 @@
 </head>
 <body>
 
-    <!-- Three ways of including CSS:
-    1. Inline CSS | Use CSS as atribute
-    2. Internal CSS | Use CSS as a HTML Element
-    3. External CSS | Prepare a seperate stylesheet -->
-    
-    <header>
-        <h1>Welcome to CSS Course!</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Page 1</a>
-            <a href="#">Page 2</a>
-            <a href="#">Page 3</a>
-            <a href="#">Page 4</a>
-        </nav>
-    </header>
+    <div class="outer-container">
 
-    <hr>
+        <!-- CSS -> Cascading Styles Sheet -->
 
-    <main>
-        <!-- <h1>Course Content :</h1> -->
-        <div>
-            <p class="odd">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, tempore animi officia cupiditate similique culpa, aliquid, ut eum iure facilis voluptatibus quidem minus ipsa voluptatem mollitia repellendus cum nesciunt sequi tempora? Aperiam facilis provident vel.</p>
+        <!-- Three ways of including CSS:
+        1. Inline CSS | Use CSS as atribute
+        2. Internal CSS | Use CSS as a HTML Element
+        3. External CSS | Prepare a seperate stylesheet -->
+        
+        <header>
+            <h1>Welcome to CSS Course!</h1>
+            <nav>
+                <a id='nav-item-1' href="#">Home</a>
+                <a id='nav-item-2' href="#">Page 1</a>
+                <a id='nav-item-3' href="#">Page 2</a>
+                <a id='nav-item-4' href="#">Page 3</a>
+                <a id='nav-item-5' href="#">Page 4</a>
+            </nav>
+        </header>
 
-            <p class="even">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, tempore animi officia cupiditate similique culpa, aliquid, ut eum iure facilis voluptatibus quidem minus ipsa voluptatem mollitia repellendus cum nesciunt sequi tempora? Aperiam facilis provident vel.</p>
-
-            <p class="odd">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, tempore animi officia cupiditate similique culpa, aliquid, ut eum iure facilis voluptatibus quidem minus ipsa voluptatem mollitia repellendus cum nesciunt sequi tempora? Aperiam facilis provident vel.</p>
-
-            <p class="even">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, tempore animi officia cupiditate similique culpa, aliquid, ut eum iure facilis voluptatibus quidem minus ipsa voluptatem mollitia repellendus cum nesciunt sequi tempora? Aperiam facilis provident vel.</p>
-
-            <span> This is for difference </span>
-        </div>
-
-        <!-- <h1>End of the course</h1> -->
-    </main>
-
-    <footer>
         <hr>
-        &copy; 2021, Innomatics Research Labs
-    </footer>
 
-    <script>
+        <main>
+            <!-- <h1>Course Content :</h1> -->
+            <div class="container">
+                <p class="odd">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, tempore animi officia cupiditate similique culpa, aliquid, ut eum iure facilis voluptatibus quidem minus ipsa voluptatem mollitia repellendus cum nesciunt sequi tempora? Aperiam facilis provident vel.</p>
 
-        const paraOne = document.getElementById('para1');
-        console.log(paraOne);
+                <p class="even">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, tempore animi officia cupiditate similique culpa, aliquid, ut eum iure facilis voluptatibus quidem minus ipsa voluptatem mollitia repellendus cum nesciunt sequi tempora? Aperiam facilis provident vel.</p>
 
-    </script>
+                <p class="odd">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, tempore animi officia cupiditate similique culpa, aliquid, ut eum iure facilis voluptatibus quidem minus ipsa voluptatem mollitia repellendus cum nesciunt sequi tempora? Aperiam facilis provident vel.</p>
+
+                <p class="even">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, tempore animi officia cupiditate similique culpa, aliquid, ut eum iure facilis voluptatibus quidem minus ipsa voluptatem mollitia repellendus cum nesciunt sequi tempora? Aperiam facilis provident vel.</p>
+
+                <h3>List Items :</h3> <hr>
+                <ul>
+                    <li> List Item - 1 </li>
+                    <li> List Item - 2 </li>
+                    <li> List Item - 3 </li>
+                    <li> List Item - 4 </li>
+                    <li> List Item - 5 </li>
+                    <li> List Item - 6 </li>
+                </ul>
+
+                <hr> <h3>Images :</h3>
+
+                <img id='react-image' src="/HTML/React_js.png" alt="ReactJS">
+            </div>
+
+            <br> <br> <br>
+
+            <div class="container">
+                <div class="bg-image">
+                    <h1>Background Images</h1>
+                </div>
+
+                <!-- <img class="bg-img" src="/HTML/sample-image.jpeg" alt=""> -->
+            </div>
+
+            <!-- <h1>End of the course</h1> -->
+        </main>
+
+        <footer>
+            <hr>
+            &copy; 2021, Innomatics Research Labs
+        </footer>
+
+    </div>
 
 </body>
 </html>

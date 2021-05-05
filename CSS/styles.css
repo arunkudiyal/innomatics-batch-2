@@ -7,11 +7,70 @@
     color: greenyellow;
 } */
 
+body {
+    border: 3px solid black;
+
+    /* padding: 25px 20px 25px 20px; */
+    padding: 5px;
+}
+
+.outer-container {
+    background-color: grey;
+}
+
 .odd {
     /* hexadecimal - #000000(black) - #ffffff(white) */
     color: #b2aef0;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: large;
+}
+
+/* Styles of the container */
+.container {
+    /* border = widthOfTheEdges kindOfTheBox color */
+    border: 1px solid black;
+
+    /* padding-left: 10px; */
+    padding: 10px;
+
+    background-color: white;
+}
+
+/* Styles for Lists */
+ul {
+    list-style: none;
+    padding: 0px;
+
+    display: inline;
+}
+
+/* Styles for thr Heading */
+h1 {
+    /* text-shadow: horizontal, vertocal, blur, color */
+    text-shadow: 3px 3px 1px black;
+
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Styles for nav-items */
+#nav-item-1, #nav-item-2, #nav-item-3, #nav-item-4 {
+    padding-right: 100px;
+}
+
+/* Styling for Images */
+#react-image {
+    width: 50%;
+
+    /* Value from [0,1] */
+    opacity: 0.3;
+}
+
+/* Styling for Background Images */
+.bg-image {
+    background: url(/HTML/sample-image.jpeg);
+    width: 95%;
+    height: 600px;
 }
 
 .even {
