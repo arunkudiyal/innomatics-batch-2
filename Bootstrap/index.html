@@ -45,12 +45,12 @@
 
         <h4>UnOrdered List :</h4> <br>
         <ul class="list-unstyled">
-            <li>Listem Item 1</li>
-            <li>Listem Item 2</li>
-            <li>Listem Item 3</li>
-            <li>Listem Item 4</li>
-            <li>Listem Item 5</li>
-            <li>Listem Item 6</li>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+            <li>List Item 5</li>
+            <li>List Item 6</li>
         </ul> <br>
 
         <h4>Inline List :</h4> <br>
@@ -89,8 +89,274 @@
 
         <hr>
 
+        <h3>Background Colors :</h3> <br>
+        <p class="bg-primary">Paragraph - 1</p>
+        <p class="bg-success">Paragraph - 2</p>
+        <p class="bg-warning">Paragraph - 3</p>
+        <p class="bg-info">Paragraph - 4</p>
+        <p class="bg-danger">Paragraph - 5</p>
+
+        <hr>
+
+        <h3>Buttons, Links & Submit :</h3> <hr>
+        <button class="btn btn-primary">Button</button>
+        <a class="btn btn-primary" href="#">Link</a>
+        <input class="btn btn-primary" type="submit" value="Submit">
+
+        <br> <br>
+
+        <button class="btn btn-primary" onclick="alert('Button Clicked!')">Button</button>
+        <button class="btn btn-success">Button</button>
+        <button class="btn btn-info">Button</button>
+        <button class="btn btn-warning">Button</button>
+        <button class="btn btn-danger">Button</button>
 
     </div>
+
+    <hr>
+
+    <div class="container">
+
+        <h3>Form & Form Elements :</h3> <br>
+
+        <h5> <u>Sign-Up Form :</u> </h5> <br>
+        <div style="border: 1px solid black; padding: 20px">
+            <form action="#">
+
+                <div class="form-group">
+                    <label>First Name : </label>
+                    <input type="text" placeholder="Enter your First Name">
+                </div>
+    
+                <div class="form-group">
+                    <label>Last Name : </label>
+                    <input type="text" placeholder="Enter your Last Name">
+                </div>
+    
+                <div class="form-group">
+                    <label>EMail : </label>
+                    <input type="email" placeholder="Enter your Email">
+                </div>
+    
+                <div class="form-group">
+                    <label>Password : </label>
+                    <input type="password" placeholder="Password">
+                </div>
+    
+                <div class="form-group">
+                    <label>Gender : </label>
+                    <select>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Others</option>
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <label>File Uplaod : </label>
+                    <input type="file">
+                    <p class="help-block">Only .docx and .pdf supported</p>
+                </div>
+    
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> I agree with the agreements.
+                    </label>
+                </div>
+    
+                <br>
+    
+                <input class="btn btn-primary" type="submit" value="Sign-Up" disabled>
+    
+                <br> <br>
+    
+            </form>
+        </div>
+
+        <h5> <u>Sign-In Form :</u> </h5> <br>
+
+        <form action="#" class="form-inline">
+            <div style="border: 1px solid black; padding: 20px">
+
+                <div class="form-group">
+                    <label>EMail : </label>
+                    <input type="email" placeholder="Enter your Email">
+                </div>
+    
+                <div class="form-group" style="padding-right: 30px;">
+                    <label>Password : </label>
+                    <input type="password" placeholder="Password">
+                </div>
+
+                <input class="btn btn-primary" type="submit" value="Sign-Up">
+
+                <br> <br>
+
+            </div>
+            
+        </form>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <h3>Tables : </h3> <br>
+
+        <table class="table table-striped table-bordered table-hover table-condensed">
+            <thead> <h4 style="text-align: center;">List of Customer</h4> </thead>
+
+            <tr class="info">
+                <th style="text-align: center;"> <b>First Name</b> </th>
+                <th style="text-align: center;"> <b>Last Name</b> </th>
+                <th style="text-align: center;"> <b>Age</b> </th>
+            </tr>
+
+            <tr class="success">
+                <td>Saqlain</td>
+                <td>Shaikh</td>
+                <td>18</td>
+            </tr>
+
+            <tr class="success">
+                <td>Shreashi</td>
+                <td>Das</td>
+                <td>20</td>
+            </tr>
+
+            <tr class="success">
+                <td>Shailendra</td>
+                <td>Sekar</td>
+                <td>20</td>
+            </tr>
+
+            <tr class="danger">
+                <td>Arun</td>
+                <td>Kudiyal</td>
+                <td>60</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <h3>List Group Items/ Group Itms :</h3> <br>
+
+        <ul class="list-group">
+            <li class="list-group-item"> Item - 1 </li>
+            <li class="list-group-item list-group-item-success"> Item - 2 </li>
+            <li class="list-group-item list-group-item-success""> Item - 3 </li>
+            <li class="list-group-item"> Item - 4 </li>
+            <li class="list-group-item"> Item - 5 </li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="container">
+
+        <h3> Panels :</h3>
+
+        <div class="panel panel-primary">
+
+            <!-- Panel Heading -->
+            <div class="panel-heading">
+                Panel's Title
+            </div>
+
+            <!-- Panel Body -->
+            <div class="panel-body">
+                Panel's Body
+            </div>
+
+            <!-- Panel Footer -->
+            <div class="panel-footer" style="color: grey;">
+                &copy; Panel's Footer
+            </div>
+
+        </div>
+
+
+        <div class="panel panel-primary">
+
+            <!-- Panel Heading -->
+            <div class="panel-heading">
+                Second Panel's Title
+            </div>
+
+            <!-- Panel Body -->
+            <div class="panel-body">
+                Second Panel's Body
+            </div>
+
+            <!-- Panel Footer -->
+            <div class="panel-footer" style="color: grey;">
+                &copy; Second Panel's Footer
+            </div>
+        </div>
+
+        <hr>
+
+        <h3>Progress Bar :</h3> <br>
+
+        <div class="progess">
+            <div class="progress-bar progress-bar-success progress-bar-striped active" style="width: 85%;"> 85% </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+
+        <h3>Badges :</h3> <br>
+        <button class="btn btn-primary"> Messages <span class="badge">20</span> </button> <br> <br>
+
+        <a href="#"> <u>Inbox</u> <span class="badge">15</span> </a>
+    </div>
+
+
+    <hr>
+
+    <div class="container">
+
+        <h3>Bootstrap GRIDS :</h3> <br>
+
+        <h5> 6 x 6 Grid: </h5> <br>
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vero laboriosam odio ex officia consectetur quibusdam, exercitationem laudantium facilis eveniet totam repellat deleniti error, modi id ullam, nostrum accusantium? Facilis modi repellendus expedita distinctio! Voluptate tempore dolor impedit nam hic, harum explicabo, minima illo esse consequatur inventore qui totam quo doloribus consequuntur enim eveniet deleniti aliquam eius corrupti aspernatur odio?</p>
+            </div>
+
+            <div class="col-md-6">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nobis voluptatem consequuntur odit tempore. Eos doloremque, sit praesentium quia assumenda distinctio, in labore quas nisi sequi, modi doloribus voluptate reiciendis! Consequuntur aliquid possimus qui esse saepe assumenda dolor unde quibusdam, necessitatibus nobis molestiae ad aut id eaque velit amet soluta, natus sed. Perferendis cupiditate laboriosam quia a deleniti consequatur nisi!</p>
+            </div>
+
+        </div>
+
+        <h5> 3 x 6 x 3 Grid </h5> <br>
+
+        <div class="row">
+
+            <div class="col-md-3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia pariatur ex provident non perferendis atque, aspernatur commodi aliquid corporis quis?</p>
+            </div>
+
+            <div class="col-md-6">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aspernatur consequatur laboriosam, fugiat itaque ipsam eaque velit saepe laborum, fugit iure nulla a. Laudantium consequuntur provident placeat est repellendus? Illo odit magni quas impedit iusto, non vel facilis deleniti dolorum ullam minima adipisci ad rerum cumque assumenda magnam labore ipsam iste in quam excepturi fugit consequatur beatae? Sunt accusamus mollitia obcaecati earum beatae minus perspiciatis, atque reprehenderit commodi, ullam quibusdam.</p>
+            </div>
+
+            <div class="col-md-3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia pariatur ex provident non perferendis atque, aspernatur commodi aliquid corporis quis?</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr>
 
     <div style="height: 500px;"></div>
 
