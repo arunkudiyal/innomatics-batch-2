@@ -164,6 +164,15 @@ console.log('Hello...')
 // console.log(`The length of the array is ${employees.length}`);
 // console.log(employees);
 
+// console.log(employees);
+
+// // First Employee
+// console.log(employees[0].designation);
+
+// // Print the skills
+// console.log( employees[0].skills[0], employees[0].skills[1], employees[0].skills[2] );
+
+// console.log( employees[1].location.officeLocation );
 
 // // JSON - JavaScript Object Notation | light-weight
 
@@ -188,23 +197,182 @@ console.log('Hello...')
 
 // console.log(100/'Arun');
 
+// CONDITIONALS
+
+// if, else, else-if
+
+// Age range - 1 to 30, 30 to 60, 60 to 100
+
+// const age = 31
+
+// Let 
+// if(age > 30) {
+//     let temp = 'temp'
+//     console.log(temp);
+
+//     // Change in let is acceptable
+//     temp = 'New Temp'
+//     console.log(temp);
+
+//     console.log(age)
+// } else {
+//     age = age - 10
+// }
+
+// Var
+// if(age > 30) {
+//     var temp = 'temp'
+//     console.log(temp);
+
+//     // Change in var is acceptable
+//     temp = 'New Temp'
+//     console.log(temp);
+
+//     console.log(age)
+// } else {
+//     age = age - 10
+// }
+
+// Const
+// if(age > 30) {
+//     const temp = 'temp'
+//     console.log(temp);
+
+//     // Change in const is NOT acceptable
+//     // temp = 'New Temp'
+//     console.log(temp);
+
+//     console.log(age)
+// } else {
+//     age = age - 10
+// }
+
+// console.log(temp);
+
+// if(age > 18) {
+//     console.log('Age is greater then 18');
+// } else {
+//     console.log('Age is less than 18');
+// }
+
+// SHORTHAND 
+// condition ? true : false
+
+// age > 30 ? console.log('Yes') : console.log('No')
+
+// true ? 'Yes' : 'No'
+
+// const color = 'Blue'
+
+// color == 'Green' ? console.log('Color is Green') : console.log('Color id NOT Green');
+
+// if(age <= 30) {
+//     console.log('Range - 1');
+// } else if( age > 30 && age <= 60 ) {
+//     console.log('Range 2');
+// } else {
+//     console.log('Range 3');
+// }
+
+
+// LOOPS
+
+// 1. for - loop , 2. while, 3. for - of Loop [Arrays]
+
+// 1. for - loop
+// for( let i = 0; i < 10; i+=2 ) {
+//     console.log(`The value of i is ${i}`);
+// }
+
+// 2. while
+// let i = 1
+// while(i <= 10) {
+//     console.log(`While Loop : ${i}`);
+//     i+=2
+// }
+
+const todos = [
+    {
+        id: 1,
+        task: 'Complete the assignment',
+        isCompleted: false
+    },
+    {
+        id: 2,
+        task: 'Take my dog out for walk',
+        isCompleted: false
+    },
+    {
+        id: 3,
+        task: 'Eat Lunch',
+        isCompleted: true
+    }
+]
+
+// const arrayExmaple = [10, 20, 30, 40, 50, 60, 101, 100, 900]
+// console.log(arrayExmaple.length);
+
+// for(let i = 0; i < todos.length; i++) {
+//     console.log(todos[i].isCompleted);
+// }
+
+// for(let todo of todos) {
+//     // if(todo.isCompleted === true) {
+//     //     console.log(todo.task);
+//     // }
+//     console.log(todo);
+// }
+
+// Check the value
+// if(21 == '21') {
+//     console.log(`String 21 & Number 21 are same in == `);
+// }
+
+// Chcek the type as well as the value
+// if(21 === '21') {
+//     console.log('TRUE');
+// } else {
+//     console.log('FALSE');
+// }
+
+
+// HIGHER ORDER ARRAY METHOD - callbacks
+
 
 // FUNCTIONS - function
 
 // function declararion
+// function functionName = (parameter(s)) {
+//     functionBody
+// }
+
 function sayName(name) {
     return `Hi, ${name}`
 }
 
-function add(a, b) {
-    console.log(typeof a);
-    console.log(typeof b);
-    return a + b;
+result = sayName('Arun')
+console.log(result);
+
+
+// ARROW FUNCTIONS IN ES6 - Shorthand of writing functions
+const greet = (name) => {
+    // Body the the function
+    return `Hi, ${name}`
 }
 
-// function call
-const message = sayName('Subhash')
-console.log(message);
+// call the function
+const greeting = greet('Saqlain')
+console.log(greeting);
 
-const added = add(true, false);
-console.log(added);
+// function add(a, b) {
+//     console.log(typeof a);
+//     console.log(typeof b);
+//     return a + b;
+// }
+
+// // function call
+// const message = sayName('Subhash')
+// console.log(message);
+
+// const added = add(true, false);
+// console.log(added);
