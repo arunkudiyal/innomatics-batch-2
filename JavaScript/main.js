@@ -346,23 +346,23 @@ const todos = [
 //     functionBody
 // }
 
-function sayName(name) {
-    return `Hi, ${name}`
-}
+// function sayName(name) {
+//     return `Hi, ${name}`
+// }
 
-result = sayName('Arun')
-console.log(result);
+// result = sayName('Arun')
+// console.log(result);
 
 
-// ARROW FUNCTIONS IN ES6 - Shorthand of writing functions
-const greet = (name) => {
-    // Body the the function
-    return `Hi, ${name}`
-}
+// // ARROW FUNCTIONS IN ES6 - Shorthand of writing functions
+// const greet = (name) => {
+//     // Body the the function
+//     return `Hi, ${name}`
+// }
 
-// call the function
-const greeting = greet('Saqlain')
-console.log(greeting);
+// // call the function
+// const greeting = greet('Saqlain')
+// console.log(greeting);
 
 // function add(a, b) {
 //     console.log(typeof a);
@@ -376,3 +376,65 @@ console.log(greeting);
 
 // const added = add(true, false);
 // console.log(added);
+
+
+// Constructor Function
+
+function Person_Function(firstname, lastName, dob) {
+    
+    // creating properties out of it | I am storing the paramete in a variable
+    // Properties | Props
+    this.firstname = firstname
+    this.lastName = lastName
+    this.dob = new Date(dob)
+
+    // Create the functions | Methods
+    this.getFullName = () => {
+        return `${this.name} ${this.lastName}`
+    }
+
+    this.getBirthYear = function() {
+        return this.dob.getFullYear();
+    }
+}
+
+// Initialize an object from the constructor function
+const person1 = new Person_Function('John', 'Ivy', '7-8-90')
+const person2 = new Person_Function('Steve', 'Smith', '8-2-92')
+
+console.log(person1);
+console.log(person2);
+
+// console.log(`The full name of Person - 1 is: ${person1.getFullName()}`);
+// console.log(`The full name of Person - 2 is: ${person2.getFullName()}`);
+
+// console.log(`The birth year of Person - 1 is: ${person1.getBirthYear()}`);
+// console.log(`The birth year of Person - 2 is: ${person2.getBirthYear()}`);
+
+
+// ES6 Classes
+
+class Person {
+    constructor(firstName, lastName, dob) {
+        // Creating the properties of the class | Data Members
+        this.firstName = firstName
+        this.lastName = lastName
+        this.dob = new Date(dob)
+    }
+
+    // Methods
+    getFullName() {
+        return `${this.firstName} ${this.lastName}`
+    }
+
+    getBirthYear() {
+        return this.dob.getFullYear();
+    }
+}
+
+// Creating the object out from Person CLASS
+const arun = new Person('Arun', 'Kudiyal', '7-5-92')
+console.log(arun);
+
+// You can use methods, but cannot change the body the methods
+console.log(`The full name is : ${arun.getFullName()}`);
