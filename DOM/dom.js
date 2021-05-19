@@ -88,7 +88,7 @@
 // console.log(lists);
 
 
-// querySelectorAll - id(#) + className(.) + tagName |
+// querySelectorAll - id(#) + className(.) + tagName | returns NodeList rather than HTMLCollection
 
 // const heading = document.querySelectorAll('#header-title')
 // console.log(heading);
@@ -148,11 +148,11 @@
 //     console.log(event);
 // }
 
-const textInput = document.querySelector('#text-input')
+// const textInput = document.querySelector('#text-input')
 
-textInput.addEventListener('keyup', (swati) => {
-    console.log(swati.target.value);
-})
+// textInput.addEventListener('keyup', (swati) => {
+//     console.log(swati.target.value);
+// })
 
 // function fun(e) {
 //     // console.log(e);
@@ -169,3 +169,79 @@ box.addEventListener('mouseout', fun)
 function fun(e) {
     box.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 40)`
 }
+
+
+
+// DOM TRAVERSALS
+
+// 1. PARENT NODE - parentElement | parentNode
+
+// const items = document.querySelector('#items') // ul
+// console.log(items);
+
+// // Find the parent element of the items
+// console.log(items.parentElement);
+
+// console.log(items.parentNode);
+
+// // Change the values or style
+// items.parentElement.style.backgroundColor = '#f4f4f4'
+
+// // Chaining of the DOM
+// console.log(items.parentElement.parentElement);
+
+
+// // 2. CHILD NODES - childNodes | children | firstElementChild | lasTElementChild
+
+// // console.log(items.childNodes); // text which is used in indentation
+// // console.log(items.children);
+
+// // console.log(items.children[1]);
+// // items.children[1].style.backgroundColor = 'yellow'
+
+
+// // firstChild
+// console.log(items.firstChild);  // text used for identation
+// console.log(items.firstElementChild);
+// // items.firstElementChild.textContent = 'Changed!'
+
+// // lastChild
+// console.log(items.lastChild);  // text used for identation
+// console.log(items.lastElementChild);
+// items.lastElementChild.style.color = 'red'
+
+
+// // 3. SIBLINGS - prevoiousElementSibling | nextElemenTSibling
+
+// // items.previousSibling - text
+// console.log(items.previousElementSibling);
+
+// console.log(items.nextElementSibling.nextElementSibling);
+
+
+
+// CREATING ELEMENTS USING DOM & RUN-TIME RENDERING
+
+// const new_li = document.createElement('li')
+
+// //set the class
+// new_li.className = 'list-group-item';
+
+// // set an ID
+// new_li.id = 'new-li-id'
+
+// // set a 3rd party attribute
+// // new_li.setAttribute('src', 'testting')
+
+// // put the content in the element
+// new_li.textContent = 'Item 7'
+
+// // Add the new_li element as a child to the ul (#items)
+// const items = document.querySelector('#items')
+// const btn = document.querySelector('#button')
+
+// btn.addEventListener('click', () => {
+//     items.appendChild(new_li)
+// })
+
+// console.log(new_li);
