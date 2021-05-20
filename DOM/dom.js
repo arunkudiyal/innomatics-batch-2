@@ -161,14 +161,14 @@
 
 
 // FUN ACTIVITY FOR THE THINGS THAT WE LAERNT
-const box = document.querySelector('#box');
-// console.log(box);
+// const box = document.querySelector('#box');
+// // console.log(box);
 
-box.addEventListener('mouseout', fun)
+// box.addEventListener('mouseout', fun)
 
-function fun(e) {
-    box.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 40)`
-}
+// function fun(e) {
+//     box.style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 40)`
+// }
 
 
 
