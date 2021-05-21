@@ -1,4 +1,4 @@
-// An AJAX Code to integrate GitHub free API
+// An AJAX Code to integrate GitHub free API | Asysnchronous JS & XML (AJAX)
 
 // To make a request you need XMLHttpRequest
 // Step 1 - Create XMLHttpRequest object
