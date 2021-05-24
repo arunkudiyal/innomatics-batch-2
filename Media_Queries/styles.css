@@ -1,0 +1,43 @@
+/* DESKTOP VIEW */
+h1 {
+    color: red;
+}
+
+#para {
+    color: blue
+}
+
+/* MEDIA QUERIES */
+/* Mobile First View */
+/* Desktop First View */
+
+/* MOBILE VIEW */
+@media (orientation: landscape) {
+    h1 {
+        color: green;
+    }
+    
+    #para {
+        color: navy
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        color: green;
+    }
+    
+    #para {
+        color: navy
+    }
+}
+
+/* @media print {
+    h1 {
+        color: black;
+    }
+    
+    #para {
+        color: blue
+    } */
+}

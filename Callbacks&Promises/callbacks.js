@@ -31,5 +31,5 @@ createPost({ title: 'Post Three', body: 'This is Post Three' }, getPosts) // 3 s
 getPosts() // 2 seconds
 
 // THE TWO PROBLEMS WITH CALLBACK
-// 1. It cannnot handle errors
+// 1. It cannnot handle errors - Run-Time error | Logical Errors
 // 2. The excution time remains the same even the error exist

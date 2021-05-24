@@ -12,6 +12,10 @@ function getPosts() {
         } )
         document.getElementById('main').innerHTML = output
 
+        const divOne = document.createElement('div')
+        divOne.innerHTML = '<p>Hey, I am a div</p>'
+        console.log(divOne);
+
     }, 2000)
 }
 
@@ -24,13 +28,15 @@ function createPost(post) {
             // Create the post
             posts.push(post)
 
+            // LOGICAL ERROR
             const error = false
 
             // Handle Errors
-            if(!error) {
-                resolve()
+            if(error) {
+                reject('Error Occured!')
+                
             } else {
-                reject('Error: Something is wrong!!')
+                resolve()
             }
         }, 5000)
     })
@@ -38,5 +44,6 @@ function createPost(post) {
 
 createPost({ title: 'Post Three', body: 'This is Post Three' })
 .then(getPosts)
+// RUN-TIME ERROR
 .catch(err => console.log(err))
 getPosts()

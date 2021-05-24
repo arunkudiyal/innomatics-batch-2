@@ -150,8 +150,9 @@
 
 // const textInput = document.querySelector('#text-input')
 
-// textInput.addEventListener('keyup', (swati) => {
-//     console.log(swati.target.value);
+// person = [ {id: 1, name: 'Subhash', designation: 'SDE-1'}, {id: 2, name: 'User 2', designation: 'SDE-2'} ]
+// textInput.addEventListener('keyup', (event) => {
+//     console.log(event.target.value);
 // })
 
 // function fun(e) {
